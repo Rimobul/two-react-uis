@@ -53,6 +53,7 @@ namespace my_new_app
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapDefaultControllerRoute();
             });
 
             app.UseSpa(spa =>
